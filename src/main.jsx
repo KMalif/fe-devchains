@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from '@containers/App';
 import Language from '@containers/Language';
+import '../config/firebaseConfig';
 
 import store, { persistor } from '@store';
 
