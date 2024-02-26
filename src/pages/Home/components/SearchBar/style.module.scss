@@ -2,10 +2,10 @@
 
 .searchContainer {
     @include directionX;
-    
     padding: 10px;
     border-radius: 10px;
     background-color: $color-white;
+    margin-bottom: 20px;
 
     .searchInput {
         width: 80%;

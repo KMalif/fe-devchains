@@ -1,1 +1,31 @@
 @import '@styles/base';
+
+.homeContainer {
+    padding: 30px;
+    @include directionX;
+    gap: 20px;
+
+    @media (max-width: 375px) {
+        @include directionY;
+    }
+
+    .startContainer {
+        flex-basis: calc(20% - 20px);
+
+        @media (max-width: 375px) {
+            display: none;
+        }
+    }
+
+    .mainContainer {
+        flex-basis: calc(50% - 20px);
+
+    }
+
+    .endContainer {
+        flex-basis: calc(30% );
+    }
+
+    
+
+}
