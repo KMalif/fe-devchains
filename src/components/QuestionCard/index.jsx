@@ -1,8 +1,12 @@
 import React from 'react'
 
 import style from './style.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const QuestionCard = ({question, tags, user}) => {
+
+  const navigate = useNavigate();
+
   return (
     <div className={style.questionContainer}>
         <div className={style.imageContainer}>
@@ -10,7 +14,11 @@ const QuestionCard = ({question, tags, user}) => {
         </div>
 
         <div className={style.questionData}>
-            <div className={style.questionTitle}>Lorem ipsum dolor sit amet, sadasldkasdlk </div>
+            <div className={style.questionTitle}
+              onClick={() => navigate('/question')}
+            >
+              Lorem ipsum dolor sit amet, sadasldkasdlk 
+            </div>
             <div className={style.tagContainer}>
                 <div className={style.tag}>Java</div>
                 <div className={style.tag}>Java</div>

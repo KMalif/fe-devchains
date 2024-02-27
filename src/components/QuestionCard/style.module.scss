@@ -24,7 +24,7 @@
        .questionTitle {
             color: $color-black;
             font-weight: 500;
-
+            cursor: pointer;
        } 
 
        .tagContainer {
@@ -32,15 +32,16 @@
         @include directionX;
         gap: 5px;
         .tag {
-            background-color: $color-grey;
+            background-color: $color-tangerin;
             border-radius: 20px;
             padding: 2px;
             width: 70px;
             text-align: center;
             font-size: 12px;
             color: $color-white;
+            cursor: pointer;
         }
-       }
+    }
 
        .creatorContainer {
             padding-top: 10px;

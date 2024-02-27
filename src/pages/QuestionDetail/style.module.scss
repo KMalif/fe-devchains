@@ -1,0 +1,126 @@
+@import '@styles/base';
+
+.pageContainer {
+    padding: 30px;
+
+    .headerTitle {
+        background-color: $color-white;
+        padding: 20px;
+        border-radius: 10px;
+
+        .titleContainer {
+            @include directionX;
+            justify-content: space-between;
+
+            .title {
+                font-size: 18px;
+                font-weight: 600;
+                color: $color-black;
+                width: 80%;
+            }   
+
+            .btnAsk {
+                cursor: pointer;
+                width: 15%;
+                height: 30px;
+                background-color: $color-tangerin;
+                text-align: center;
+                padding: 5px;
+                border-radius: 10px;
+                color: $color-white;
+                font-weight: 600;
+                font-size: 14px;
+                border: none;
+            }
+        }
+
+        .questionInfo {
+            @include directionX;
+            gap: 20px;
+            width: 50%;
+            p{
+                color: $color-grey;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .questionContainer {
+        padding-top: 20px;
+        @include directionX;
+        gap: 20px;
+
+        .question {
+            flex-basis: calc(70% - 20px);
+            background-color: $color-white;
+            padding: 20px;
+            border-radius: 10px;        
+
+            .content {
+                border-bottom: 0.5px solid $color-grey;
+                padding-bottom: 20px;
+                .description {
+                    font-size: 14px;
+                    color: $color-black;
+                }
+    
+                .tagContainer {
+                    padding-top: 20px;
+                    @include directionX;
+                    gap: 5px;
+                    .tag {
+                        background-color: $color-tangerin;
+                        border-radius: 20px;
+                        padding: 5px;
+                        text-align: center;
+                        font-size: 10px;
+                        color: $color-white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+        .relatedQuestion {
+            flex-basis: calc(30% - 20px);
+            background-color: $color-white;
+            padding: 20px;
+            border-radius: 10px;
+
+            .title {
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-black;
+                
+            }
+
+            .questionList {
+                @include directionY;
+                gap: 10px;
+
+                .questions {
+                    @include directionX;
+                    gap: 10px;
+                    align-items: center;
+
+                    .count {
+                        height: 32px;
+                        width: 32px;
+                        background-color: $color-grey;
+                        color: $color-white;
+                        border-radius: 10px;
+                        text-align: center;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        cursor: pointer;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,6 +8,7 @@ import SearhcBar from './components/SearchBar';
 import PopularTag from './components/PopularTag';
 
 import style from './style.module.scss';
+import QuestionForm from './components/QuestionForm.jsx';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -23,10 +24,15 @@ const Home = () => {
       </div>
       <div className={style.mainContainer}>
         <SearhcBar/>
-        <QuestionCard/>
+        <div className={style.questionCards}>
+          <QuestionCard/>
+          <QuestionCard/>
+          <QuestionCard/>
+        </div>
+        
       </div>
       <div className={style.endContainer}>
-        <QuestionCard/>
+        <QuestionForm/>
       </div>
       
     </div>

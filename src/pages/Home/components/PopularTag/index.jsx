@@ -19,7 +19,7 @@ const PopularTag = () => {
                 #Typescript
             </div>
             <div className={style.tagCount}>
-                20 Question by this tag
+                10 Question by this tag
             </div>
         </div>
         <div className={style.content}>
@@ -27,7 +27,7 @@ const PopularTag = () => {
                 #Java
             </div>
             <div className={style.tagCount}>
-                20 Question by this tag
+                5 Question by this tag
             </div>
         </div>
     </div>
