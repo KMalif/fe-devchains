@@ -80,34 +80,35 @@
 
         .relatedQuestion {
             flex-basis: calc(30% - 20px);
-            background-color: $color-white;
-            padding: 20px;
-            border-radius: 10px;
-
             // @include apply-at-xs-size {
             //     flex: 1;
             // }
-
-            .title {
-                font-size: 16px;
-                font-weight: 600;
-                color: $color-black;
-            }
-
-            .content {
-                padding-top: 20px;
-                @include directionY;
-        
-                .tags {
-                    font-size: 14px;
+            .container {
+                background-color: $color-white;
+                padding: 20px;
+                border-radius: 10px;
+                .title {
+                    font-size: 16px;
                     font-weight: 600;
                     color: $color-black;
                 }
-        
-                .tagCount {
-                    font-size: 12px;
-                    font-weight: 400;
-                    color: $color-grey;
+    
+                .content {
+                    padding-top: 20px;
+                    @include directionY;
+            
+                    .tags {
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $color-black;
+                    }
+            
+                    .tagCount {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $color-grey;
+                    }
                 }
             }
         }

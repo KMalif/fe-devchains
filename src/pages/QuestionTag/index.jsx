@@ -1,9 +1,9 @@
 
-import QuestionCard from '@components/QuestionCard';
-import style from './style.module.scss';
-
 import React from 'react'
 
+import QuestionCard from '@components/QuestionCard';
+
+import style from './style.module.scss';
 
 const QuestionTag = ({question}) => {
   return (
@@ -27,17 +27,20 @@ const QuestionTag = ({question}) => {
           </div>
 
           <div className={style.relatedQuestion}>
-            <div className={style.title}>Popular Tags</div> 
-
-            {/* map the popular tags here */}
-            <div className={style.content}>
-              <div className={style.tags}>
-                  #Javascript
-              </div>
-              <div className={style.tagCount}>
-                  20 Question by this tag
+            
+            <div className={style.container}>
+              <div className={style.title}>Popular Tags</div> 
+              {/* map the popular tags here */}
+              <div className={style.content}>
+                <div className={style.tags}>
+                    #Javascript
+                </div>
+                <div className={style.tagCount}>
+                    20 Question by this tag
+                </div>
               </div>
             </div>
+            
           </div>
 
         </div>
