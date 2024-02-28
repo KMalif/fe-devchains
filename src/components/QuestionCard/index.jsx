@@ -20,9 +20,9 @@ const QuestionCard = ({question, tags, user}) => {
               Lorem ipsum dolor sit amet, sadasldkasdlk 
             </div>
             <div className={style.tagContainer}>
-                <div className={style.tag}>Java</div>
-                <div className={style.tag}>Java</div>
-                <div className={style.tag}>Java</div>
+                <div className={style.tag} onClick={() => navigate('/question/tagged')}>Java</div>
+                <div className={style.tag} onClick={() => navigate('/question/tagged')}>Kotlin</div>
+                <div className={style.tag} onClick={() => navigate('/question/tagged')}>Javascript</div>
             </div>
             <div className={style.creatorContainer}>
               <div className={style.profile}>

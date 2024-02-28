@@ -4,6 +4,8 @@ import Home from '@pages/Home';
 import NotFound from '@pages/NotFound';
 import Login from '@pages/Login';
 import QuestionDetail from '@pages/QuestionDetail';
+import QuestionTag from '@pages/QuestionTag';
+import AskQuestion from '@pages/AskQuestion';
 
 
 const routes = [
@@ -28,6 +30,22 @@ const routes = [
     component: QuestionDetail,
     layout: MainLayout,
   },
+  {
+    path: '/question/tagged',
+    name: 'QuestionTag',
+    protected: false,
+    component: QuestionTag,
+    layout: MainLayout,
+  },
+  {
+    path: '/question/ask',
+    name: 'AskQuestion',
+    protected: false,
+    component: AskQuestion,
+    layout: MainLayout,
+  },
+
+  
   { path: '*', name: 'Not Found', component: NotFound, layout: MainLayout, protected: false },
 ];
 

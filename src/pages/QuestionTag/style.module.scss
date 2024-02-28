@@ -37,7 +37,7 @@
         .questionInfo {
             @include directionX;
             gap: 20px;
-            width: 50%;
+            width: 70%;
             p{
                 color: $color-grey;
                 font-size: 12px;
@@ -67,25 +67,13 @@
             .content {
                 border-bottom: 0.5px solid $color-grey;
                 padding-bottom: 20px;
-                .description {
-                    font-size: 14px;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
                     color: $color-black;
-                }
-    
-                .tagContainer {
-                    padding-top: 20px;
-                    @include directionX;
-                    gap: 5px;
-                    .tag {
-                        background-color: $color-tangerin;
-                        border-radius: 20px;
-                        padding: 5px;
-                        text-align: center;
-                        font-size: 10px;
-                        color: $color-white;
-                        cursor: pointer;
-                    }
-                }
+                    width: 80%;
+                }   
             }
 
         }
@@ -104,32 +92,22 @@
                 font-size: 16px;
                 font-weight: 600;
                 color: $color-black;
-                
             }
 
-            .questionList {
+            .content {
+                padding-top: 20px;
                 @include directionY;
-                gap: 10px;
-
-                .questions {
-                    @include directionX;
-                    gap: 10px;
-                    align-items: center;
-
-                    .count {
-                        height: 32px;
-                        width: 32px;
-                        background-color: $color-grey;
-                        color: $color-white;
-                        border-radius: 10px;
-                        text-align: center;
-                    }
-
-                    p{
-                        font-size: 14px;
-                        cursor: pointer;
-                        font-weight: 500;
-                    }
+        
+                .tags {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $color-black;
+                }
+        
+                .tagCount {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $color-grey;
                 }
             }
         }

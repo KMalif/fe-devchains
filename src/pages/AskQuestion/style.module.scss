@@ -1,0 +1,180 @@
+@import '@styles/base';
+
+.pageContainer {
+    padding: 30px;
+    
+    .questionContainer {
+        padding-top: 20px;
+        @include directionX;
+        gap: 20px;
+
+        // @include apply-at-xs-size {
+        //     @include directionY;
+        // }
+
+        .question {
+            flex-basis: calc(70% - 20px);
+            background-color: $color-white;
+            padding: 20px;
+            border-radius: 10px;        
+            // @include apply-at-xs-size {
+            //     flex: 1;
+            // }
+
+            .content {
+                border-bottom: 0.5px solid $color-grey;
+                padding-bottom: 20px;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $color-black;
+                    width: 80%;
+                }   
+            }
+
+            .titleForm {
+                border: 1px solid $color-grey;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 20px;
+
+                .title {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $color-black;
+                } 
+
+                .desc {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $color-grey;
+                    padding-bottom: 10px;
+                }
+
+                input {
+                    height: 40px;
+                    width: calc(100% - 15px);;
+                    background-color: $color-white-fade;
+                    border-radius: 5px;
+                    color: $color-black;
+                    border: 1px solid $color-grey;
+                    padding-left: 10px;
+                }
+            }
+
+            .descForm {
+                border: 1px solid $color-grey;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 20px;
+
+                .title {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $color-black;
+                } 
+
+                .desc {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $color-grey;
+                    padding-bottom: 10px;
+                }
+
+                .descInput {
+                    z-index: -99999;
+                }
+            }
+
+            .tagsForm {
+                border: 1px solid $color-grey;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 20px;
+
+                .title {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $color-black;
+                } 
+
+                .desc {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $color-grey;
+                    padding-bottom: 10px;
+                }
+
+                input {
+                    height: 40px;
+                    width: calc(100% - 15px);;
+                    background-color: $color-white-fade;
+                    border-radius: 5px;
+                    color: $color-black;
+                    border: 1px solid $color-grey;
+                    padding-left: 10px;
+                }
+            }
+
+            .buttonSave {
+                margin-top: 20px;
+                width: 20%;
+                height: 40px;
+                background-color: $color-tangerin;
+                text-align: center;
+                padding: 5px;
+                border-radius: 10px;
+                color: $color-white;
+                font-weight: 600;
+                font-size: 14px;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+
+        .relatedQuestion {
+            flex-basis: calc(30% - 20px);
+            // @include apply-at-xs-size {
+            //     flex: 1;
+            // }
+
+            .container {
+                background-color: $color-white;
+                border-radius: 10px;
+                padding: 20px;
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $color-black;
+                }
+    
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: $color-black;
+                }
+    
+                .steps {
+                    border-radius: 10px;
+                    border: 1px solid $color-tangerin;
+                    padding: 5px;
+    
+                    .title {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $color-black;
+                    }   
+    
+                    ul {
+                        font-size: 14px;
+                        color: $color-black;
+                        text-align: justify;
+                    }
+                }
+            }    
+        }
+    }
+}

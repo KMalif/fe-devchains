@@ -21,11 +21,13 @@
             background-color: $color-white-fade;
             border-radius: 5px;
             color: $color-black;
-            border: none;
+            border: 1px solid $color-grey;
             padding-left: 10px;
         }
 
         button {
+            cursor: pointer;
+            height: 35px;
             background-color: $color-tangerin;
             text-align: center;
             padding: 5px;
