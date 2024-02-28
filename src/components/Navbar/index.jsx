@@ -51,13 +51,13 @@ const Navbar = ({ title, locale, theme }) => {
           <div className={classes.title}>{title}</div>
         </div>
         <div className={classes.toolbar}>
-          <div className={classes.theme} onClick={handleTheme} data-testid="toggleTheme">
+          {/* <div className={classes.theme} onClick={handleTheme} data-testid="toggleTheme">
             {theme === 'light' ? <NightsStayIcon /> : <LightModeIcon />}
-          </div>
-          <div className={classes.toggle} onClick={handleClick}>
-            <Avatar className={classes.avatar} src={locale === 'id' ? '/id.png' : '/en.png'} />
-            <div className={classes.lang}>{locale}</div>
-            <ExpandMoreIcon />
+          </div> */}
+          <div className={classes.toggle} onClick={() => navigate('/profile')}>
+            <Avatar className={classes.avatar} src='/brand_logos.svg' />
+            {/* <div className={classes.lang}>{locale}</div> */}
+            {/* <ExpandMoreIcon /> */}
           </div>
         </div>
         <Menu open={open} anchorEl={menuPosition} onClose={handleClose}>
