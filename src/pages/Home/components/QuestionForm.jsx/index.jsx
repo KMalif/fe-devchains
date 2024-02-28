@@ -1,8 +1,12 @@
 import React from 'react'
 
 import style from './style.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const QuestionForm = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className={style.questionContainer}>
         <div className={style.title}>
@@ -10,7 +14,7 @@ const QuestionForm = () => {
         </div>
         <div className={style.inputForm}>
             <input type="text" placeholder='What is in your mind'/>
-            <button>Next</button>
+            <button onClick={() => navigate('/question/ask')}>Next</button>
         </div>
     </div>
   )

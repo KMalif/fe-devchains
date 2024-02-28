@@ -92,46 +92,50 @@
 
         .relatedQuestion {
             flex-basis: calc(30% - 20px);
-            background-color: $color-white;
-            padding: 20px;
-            border-radius: 10px;
 
             // @include apply-at-xs-size {
             //     flex: 1;
             // }
+            .container {
+                background-color: $color-white;
+                padding: 20px;
+                border-radius: 10px;
 
-            .title {
-                font-size: 16px;
-                font-weight: 600;
-                color: $color-black;
                 
-            }
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $color-black;
+                    
+                }
 
-            .questionList {
-                @include directionY;
-                gap: 10px;
-
-                .questions {
-                    @include directionX;
+                .questionList {
+                    @include directionY;
                     gap: 10px;
-                    align-items: center;
 
-                    .count {
-                        height: 32px;
-                        width: 32px;
-                        background-color: $color-grey;
-                        color: $color-white;
-                        border-radius: 10px;
-                        text-align: center;
-                    }
+                    .questions {
+                        @include directionX;
+                        gap: 10px;
+                        align-items: center;
 
-                    p{
-                        font-size: 14px;
-                        cursor: pointer;
-                        font-weight: 500;
+                        .count {
+                            height: 32px;
+                            width: 32px;
+                            background-color: $color-grey;
+                            color: $color-white;
+                            border-radius: 10px;
+                            text-align: center;
+                        }
+
+                        p{
+                            font-size: 14px;
+                            cursor: pointer;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
+
         }
     }
 }

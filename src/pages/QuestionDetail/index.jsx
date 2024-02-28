@@ -1,19 +1,22 @@
 
-import QuestionCard from '@components/QuestionCard';
-import style from './style.module.scss';
-
-
 import React from 'react'
+
 import AnswerCard from './components/AnswerCard';
 import AnswerForm from './components/AnswerForm';
 
+import style from './style.module.scss';
+import { useNavigate } from 'react-router-dom';
+
 const QuestionDetail = ({question}) => {
+
+  const navigate = useNavigate();
+
   return (
     <div className={style.pageContainer}>
         <div className={style.headerTitle}>
             <div className={style.titleContainer}>
               <div className={style.title}>Question Title Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sunt nostrum cupiditate similique vel suscipit eligendi deserunt saepe soluta reprehenderit. Dolorum dolore esse libero aspernatur vel! Error, tempore? Distinctio, sint!</div>
-              <button className={style.btnAsk}>Ask Something</button>
+              <button className={style.btnAsk} onClick={() => navigate('/question/ask')}>Ask Something</button>
             </div>
             <div className={style.questionInfo}>
               <p>Asked today</p>
@@ -39,29 +42,16 @@ const QuestionDetail = ({question}) => {
           </div>
 
           <div className={style.relatedQuestion}>
-            <div className={style.title}>Related question</div> 
-          
-            <div className={style.questionList}>
-              <div className={style.questions}>
-                <div className={style.count}>0</div>
-                <p>Lorem ipsum dolor sit</p>
-              </div>    
+            <div className={style.container}>
+              <div className={style.title}>Related question</div> 
+              
+              <div className={style.questionList}>
+                <div className={style.questions}>
+                  <div className={style.count}>0</div>
+                  <p>Lorem ipsum dolor sit</p>
+                </div>    
+              </div>
             </div>
-
-            <div className={style.questionList}>
-              <div className={style.questions}>
-                <div className={style.count}>0</div>
-                <p>Lorem ipsum dolor sit</p>
-              </div>    
-            </div>
-
-            <div className={style.questionList}>
-              <div className={style.questions}>
-                <div className={style.count}>0</div>
-                <p>Lorem ipsum dolor sit</p>
-              </div>    
-            </div>
-
             
           </div>
 
