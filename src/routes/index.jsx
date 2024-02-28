@@ -6,6 +6,7 @@ import Login from '@pages/Login';
 import QuestionDetail from '@pages/QuestionDetail';
 import QuestionTag from '@pages/QuestionTag';
 import AskQuestion from '@pages/AskQuestion';
+import Signup from '@pages/Signup';
 
 
 const routes = [
@@ -21,6 +22,13 @@ const routes = [
     name: 'Login',
     protected: false,
     component: Login,
+    layout: MainLayout,
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    protected: false,
+    component: Signup,
     layout: MainLayout,
   },
   {
@@ -44,6 +52,8 @@ const routes = [
     component: AskQuestion,
     layout: MainLayout,
   },
+
+
 
   
   { path: '*', name: 'Not Found', component: NotFound, layout: MainLayout, protected: false },

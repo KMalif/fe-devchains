@@ -103,6 +103,8 @@
           @include directionX;
           justify-content: center;
           padding-top: 20px;
+          padding-bottom: 20px;
+
           button {
             width: calc(100% - 30px);
             height: 45px;
@@ -115,9 +117,11 @@
             font-size: 16px;
             font-weight: 600;
           }
+
           button:hover {
             filter: brightness(120%);
           }
+
           a {
             text-decoration: none;
             color: $color-tangerin;
@@ -125,40 +129,6 @@
           }
         }
       }
-    }
-    .buttonGoogleContainer {
-      @include directionX;
-      justify-content: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-
-      .iconButton {
-        @include directionX;
-        width: calc(100% - 30px);
-        height: 45px;
-        border-radius: 10px;
-        border: 1 px solid $color-grey;
-        outline: none;
-        background-color: $color-white;
-        color: $color-grey;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 600;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-
-        img {
-          width: 20px;
-          height: 20px;
-          border-radius: 100%;
-        }
-
-        button:hover {
-          filter: brightness(120%);
-        }
-      }
-      
     }
     
   }
